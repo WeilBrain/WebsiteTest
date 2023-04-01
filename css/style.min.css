@@ -438,6 +438,7 @@ body._lock {
   color: #212121;
 }
 .header__link:hover {
+  border: 0px;
   transition: color 0.2s ease-in-out;
   color: #FF772D;
 }
@@ -464,7 +465,7 @@ body._lock {
   transition: background-color 0.3s ease-in-out;
   color: #FF772D;
   background-color: white;
-  border: 1px solid #FF772D;
+  border: 0px solid #FF772D;
 }
 
 .header__button-login {
@@ -719,11 +720,23 @@ body._lock {
 }
 .test {
   position: relative;
-  max-width: 113rem;
+  max-width: 79%;
 }
 
 .swiper-button-prev {
-  right: 50%;
+  right: 0;
+  left: 88%;
+  color: gray;
+  width: 12px;
+  height: 20px;
+  top: 26px;
+}
+
+.swiper-button-next {
+  color: gray;
+  width: 12px;
+  height: 20px;
+  top: 26px;
 }
 
 @media screen and (max-width: 480px) {
@@ -807,40 +820,54 @@ body._lock {
   }
   .tt-png {
     left: 82%;
-    top: 70rem;
+    top: 50rem;
     width: 80px;
     height: 80px;
   }
   .facebook-png {
     left: 85%;
-    top: 32rem;
+    top: 22rem;
     width: 60px;
     height: 60px;
   }
   .twitch-png {
     left: 60%;
-    top: 80rem;
+    top: 65rem;
   }
   .vk-png {
     left: 4%;
-    top: 70rem;
+    top: 60rem;
     width: 8rem;
     height: 8rem;
   }
   .inst-png {
-    left: -10%;
+    left: -5%;
     top: 12rem;
-    width: 10rem;
-    height: 10rem;
+    width: 7rem;
+    height: 7rem;
   }
   .dot-image {
     display: none;
   }
   .promotion__title {
+    margin: 0 auto;
+    max-width: 26.1rem;
+    text-align: center;
     width: 45rem;
     background-image: none;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
   }
   .promotion__description {
+    max-width: 32rem;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
     vertical-align: center;
   }
   .promotion__button {
@@ -849,7 +876,7 @@ body._lock {
     margin-top: 2.2rem;
   }
   .order {
-    padding-top: 12.5rem;
+    padding-top: 18.5rem;
   }
   .order .container {
     max-width: 480px;
@@ -860,6 +887,120 @@ body._lock {
     grid-template-columns: 1fr;
   }
   .order__item {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    max-width: 15rem;
+    height: 9rem;
+    background-color: #F9F9F9;
     width: 20rem;
+  }
+  .order .order__sumbit {
+    margin-left: 1.5rem;
+    max-width: 90%;
+  }
+  .order .order__list {
+    justify-items: center;
+  }
+  .order .order__link {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .order .order__image {
+    padding: 0;
+  }
+  .feedback {
+    padding-top: 5rem;
+  }
+  .feedback__container {
+    max-width: 480px;
+    margin: 0;
+    margin-left: 0rem;
+  }
+  .feedback__item {
+    width: 28rem;
+    height: 24rem;
+  }
+  .feedback__about {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    padding-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  .feedback__title {
+    padding-left: 1.5rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .yt-png {
+    left: 78%;
+    top: 4rem;
+  }
+  .tg-png {
+    left: -12%;
+    top: 18rem;
+    width: 8rem;
+    height: 8rem;
+  }
+  .tt-png {
+    left: 77%;
+    top: 51rem;
+    width: 80px;
+    height: 80px;
+  }
+  .facebook-png {
+    left: 90%;
+    top: 22rem;
+    width: 60px;
+    height: 60px;
+  }
+  .twitch-png {
+    left: 60%;
+    top: 65rem;
+  }
+  .vk-png {
+    left: 4%;
+    top: 61rem;
+    width: 8rem;
+    height: 8rem;
+  }
+  .inst-png {
+    left: -7%;
+    top: 6rem;
+    width: 7rem;
+    height: 7rem;
+  }
+  .order__sumbit {
+    margin-left: 1rem;
+    max-width: 100%;
+  }
+  .order__list {
+    justify-items: center;
+  }
+  .feedback {
+    padding-top: 5rem;
+  }
+  .feedback__container {
+    max-width: 360px;
+    margin: 0;
+    margin-left: 0rem;
+  }
+  .feedback__item {
+    width: 28rem;
+    height: 24rem;
+  }
+  .feedback__about {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    padding-top: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding-bottom: 1.5rem;
   }
 }
